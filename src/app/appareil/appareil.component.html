@@ -1,0 +1,16 @@
+<hr />
+<li>
+  <!-- <div
+    [ngStyle]="{
+      'background-color': getColor(),
+      height: '20px',
+      width: '20px'
+    }"
+  ></div> -->
+  
+  <h4 [ngStyle]="{ 'background-color': getColor() }">
+    Appareil :{{ appareilName }} --- Appareil Status: {{ getStatus() }}
+  </h4>
+  <button (click) = onSwitchOnOne()>Allumer one</button>
+  <button (click) = onSwitchOffOne()>Eteindre one</button>
+</li>
